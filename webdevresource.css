@@ -117,6 +117,12 @@ font-weight: bolder;}
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
+  background-color: #01b1aa;
+  font-weight: 900;
+}
+
+.resources a {
+  color:white !important;
 }
 
 #socialdiv {
