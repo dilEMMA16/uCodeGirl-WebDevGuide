@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- the page title that appears on the tab of the browser -->
+  <title>Web Dev Reference</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Description of the page">
+
+  <!-- Bootstrap links to help us have a responsive layout for our site -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Links to use Icons -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+  <!-- Font 1 from Google = Montserrat-->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <!-- Our style sheet where we can customize parts of our page further -->
+  <link rel="stylesheet"  type="text/css" href="webdevresource.css">
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class=row>
+      <div id=title class="col-sm-12">
+        <i class="fas fa-asterisk fa-spin" style='font-size:90px;color:white;'></i><br>
+        <h1>uCodeGirl</h1>
+        <h3><em>Web Dev Quick Reference</em></h3>
+      </div>
+    </div>
+
+    <div class=row>
+      <div class="col-sm-12 webdevdiv sectiontitle">
+        <i style='font-size:50px;color:white;' class='far'>&#xf11c;</i><br><br>
+        <span class=subtitle>Web Development</span><br><br>
+        In a nutshell, web development is using technologies and resources to craft websites.
+        Some of the tools web developers use include HTML for structuring websites, CSS for adding styles to websites, and JavaScript for adding functionality to websites (like events that happen after you click a button!).
+        Web development is a combination of design, code, problem-solving, and creativity!
+      </div>
+    </div>
+    <br><br>
+
+    <div class=row>
+      <div class="col-sm-6 ">
+        <div class="nesteddiv leftdiv content ">
+        <h3>Project File Organization</h3><br>
+        <pre>
+        <i style='font-size:24px' class='far'>&#xf07b;</i> PROJECTNAME<br>
+        &#9; <i style='font-size:24px' class='far'>&#xf07b;</i> imgs<br>
+        &#9;&#9; <i style='font-size:24px' class='far'>&#xf1c5;</i> image.png<br>
+        &#9; <i style='font-size:24px' class='far'>&#xf1c9;</i> PROJECTNAME.HTML<br>
+        &#9; <i style='font-size:24px' class='far'>&#xf15b;</i> PROJECTNAME.CSS
+        </pre>
+        </div>
+      </div>
+      <div class="col-sm-6 ">
+        <div class="nesteddiv rightdiv content ">
+        <h3>Responsive Web Design</h3><br>
+        Abbreviated to RWD, Responsive Web Design is a practice that is involved with
+        building websites in a way that responds to changes in devices (computer, tablets, phones, etc.)
+        so that the content is organized and displayed in the most effective way for that device. It's
+        important to keep RWD in mind when developing websites because it makes it more usable for your users.
+        </div>
+      </div>
+    </div>
+
+    <div class=row>
+      <div class="col-sm-6 ">
+        <div class="nesteddiv leftdiv content ">
+        <h3>User Interface Design</h3><br>
+        Abbreviated to UI Design, User Interface Design is a practive that is involved with designing
+        aesthetically-pleasing pages and graphics. To achieve a successful UI design for your websites, use the elements of art
+        (line, shape, color, value, form, texture, and space). While using these elements, keep in mind the principles of art:
+        balance, contrast, emphasis, movement, pattern, rhythem, and unity/variety.
+        </div>
+      </div>
+      <div class="col-sm-6 ">
+        <div class="nesteddiv rightdiv content ">
+        <h3>User Experience Design</h3><br>
+        Abbreviated to UX Design, User Experience Design is a practice that is involved with
+        laying out and adjusting web pages and their elements in a way that is optimal for
+        the user visiting the page.  This includes thinking about what words to use, what labels
+        to have, icons vs text, placement, ordering, spacing, and more! Having a good UX design will
+        make users enjoy the site more and make it easier for them to use the site.
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br>
+
+    <div class=row>
+      <div class="col-sm-12 htmldiv sectiontitle">
+        <i style='font-size:50px;color:white;' class='fas'>&#xf121;</i><br><br>
+        <span class=subtitle>HTML</span><br><br>
+        Hyper Text Markup Language, structure of web pages, elements of the page represented by tags
+      </div>
+    </div>
+    <br>
+    <div class=row>
+      <div class="col-sm-4">
+        <div class="nesteddiv leftdiv content">
+          <h3>Common Tags</h3><br>
+          <table>
+            <tr>
+              <th>Element/Function</th>
+              <th>Tag(s)</th>
+            </tr>
+            <tr>
+              <td>Image</td>
+              <td>&lt;img&gt;</td>
+            </tr>
+            <tr>
+              <td>Link</td>
+              <td>&lt;a&gt;LABEL&lt;/a&gt;</td>
+            </tr>
+            <tr>
+              <td>Division/Section</td>
+              <td>&lt;div&gt;CONTENT&lt;/div&gt;</td>
+            </tr>
+            <tr>
+              <td>New Line</td>
+              <td>&lt;br&gt;</td>
+            </tr>
+            <tr>
+              <td>Button</td>
+              <td>&lt;button&gt;LABEL&lt;/button&gt;</td>
+            </tr>
+            <tr>
+              <td>Paragraph</td>
+              <td>&lt;p&gt;TEXT&lt;/p&gt;</td>
+            </tr>
+            <tr>
+              <td>Isolate Element</td>
+              <td>&lt;span&gt;ELEMENT&lt;/span&gt;</td>
+            </tr>
+            <tr>
+              <td>Italicize</td>
+              <td>&lt;em&gt;TEXT&lt;/em&gt;</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>&lt;audio&gt;SOURCE&lt;/audio&gt;</td>
+            </tr>
+            <tr>
+              <td>Comment</td>
+              <td>&lt;!--COMMENT--&gt;</td>
+            </tr>
+            <tr>
+              <td>Header</td>
+              <td>&lt;h1&gt;TEXT&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+              <td>Horizontal Line</td>
+              <td>&lt;hr&gt;</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>&lt;script&gt;CODE&lt;/script&gt;</td>
+            </tr>
+          </table><br>
+          For more tags: <a href='https://www.w3schools.com/tags/'>W3Schools HTML Reference</a>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="nesteddiv rightdiv content">
+          <h3>Basic Page Layout</h3><br>
+          <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+              &lt;!-- The page title that appears on the tab of the browser --&gt;
+              &lt;title&gt;Web Dev Reference&lt;/title&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+              &lt;meta name="description" content="Description of the page"&gt;
+
+              &lt;!-- Bootstrap links to help us have a responsive layout for our site --&gt;
+              &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"&gt;
+              &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+              &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+              &lt;!-- Our style sheet where we can customize parts of our page further --&gt;
+              &lt;link rel="stylesheet"  type="text/css" href="webdevresource.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;!-- Bootstrap container for all of our content --&gt;
+              &lt;div class="container-fluid"&gt;
+                &lt;!-- A Bootstrap full-width row --&gt;
+                &lt;div class=row&gt;
+                  &lt;div class="col-sm-12"&gt;
+                    SOME CONTENT
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+      </div>
+      </div>
+    </div>
+
+    <div class=row>
+      <div id=bootstrapsection class="col-sm-12">
+        <div class="nesteddiv content">
+          <h3>What is Bootstrap?</h3><br>
+          Bootstrap is a tool for styling and organizing web pages.
+          It provides premade stylesheets with rules that we can use
+          through adding CSS classes to HTML elements to format them. To use these,
+          we need to import Bootstrap into our project in the head tag.<br><br>
+          One of the big benefits of using Bootstrap is the grid layout functionality.
+          According to W3Schools, <quote>
+          Bootstrap's grid system allows up to 12 columns across the page.
+          If you do not want to use all 12 column individually, you can group the columns
+          together to create wider columns.  Bootstrap's grid system is responsive,
+          and the columns will re-arrange depending on the screen size:
+          on a big screen it might look better with the content organized
+          in three columns, but on a small screen it would be better if
+          the content items were stacked on top of each other.</quote><br><br><br>
+          <img src="imgs/bootstrapgrid.png" id=bootstrapimg alt="Bootstrap Grid Layout Example"><br><br>
+          For more information: <a href='https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp'>
+          W3Schools Bootstrap Intro</a>
+
+        </div>
+      </div>
+    </div><br><br><br><br><br><br>
+
+    <div class=row>
+      <div class="col-sm-12 cssdiv sectiontitle">
+        <i style='font-size:50px;color:white;' class='fas'>&#xf53f;</i><br><br>
+        <span class=subtitle>CSS</span><br><br>
+        Cascading Style Sheets, describes the style (color, position, font, etc.) HTML elements chosen by a selector should have based on a defined rule
+      </div>
+    </div>
+    <br>
+
+    <div class="col-sm-6 ">
+      <div class="nesteddiv leftdiv content ">
+      <h3>Element Selectors</h3><br>
+      When we work with CSS, there are a few different ways we can select HTML elements that we want to style.
+      <br><br>
+      <h5>HTML Tag Name</h5>
+      To use this as a selector, we need to use the name of the HTML tag for the element (NOT including the brackets!). Some examples would be
+      p, body, h1, img, a, and div.
+      <br><br>
+      <h5>Class Attribute</h5>
+      To use this as a selector, we need to add a class attribute to the HTML element's tag, such as &lt;img class="nameOfClass">.
+      We use class attributes when we want to use the same style for more than one HTML element.
+      <br><br>
+      <h5>ID Attribute</h5>
+      To use this as a selector, we need to add an ID attribute to the HTML element's tag, such as &lt;img id="nameOfID">.
+      We use ID attributes when we want to use a style for only ONE HTML element.
+      <br><br>
+      </div>
+    </div>
+    <div class="col-sm-6 ">
+      <div class="nesteddiv rightdiv content ">
+      <h3>Box Model</h3><br>
+      The box model diagram <a href=https://www.w3schools.com/css/css_boxmodel.asp>(source)</a> is used to help understand the difference between some common CSS properties: margin, border, and padding.<br><br>
+      <img src="imgs/boxmodel.png" id=boxmodelimg alt="box model">
+      </div>
+    </div>
+  </div>
+
+  <div class=row>
+    <div class="col-sm-4 ">
+      <div class="nesteddiv leftdiv content ">
+      <h3>Styling Options</h3><br>
+      <table>
+        <tr>
+          <th>Style</th>
+          <th>Property Name</th>
+        </tr>
+        <tr>
+          <td>Background Color</td>
+          <td>background-color</td>
+        </tr>
+        <tr>
+          <td>Font of Text</td>
+          <td>font-family</td>
+        </tr>
+        <tr>
+          <td>Color of Text</td>
+          <td>color</td>
+        </tr>
+        <tr>
+          <td>Size of Text</td>
+          <td>font-size</td>
+        </tr>
+        <tr>
+          <td>Boldness of Text</td>
+          <td>font-weight</td>
+        </tr>
+        <tr>
+          <td>Height of Element</td>
+          <td>height</td>
+        </tr>
+        <tr>
+          <td>Width of Element</td>
+          <td>width</td>
+        </tr>
+        <tr>
+          <td>Space Outside Div</td>
+          <td>margin</td>
+        </tr>
+        <tr>
+          <td>Space Inside Div</td>
+          <td>padding</td>
+        </tr>
+        <tr>
+          <td>Text Alignment</td>
+          <td>text-align</td>
+        </tr>
+      </table><br>
+      For more tags: <a href='https://www.w3schools.com/cssref/default.asp'>W3Schools CSS Reference</a>
+      </div>
+    </div>
+    <div class="col-sm-8 ">
+      <div class="nesteddiv rightdiv content ">
+      <h3>Examples</h3><br>
+      <pre><code>
+        /* Example of HTML Element Selector */
+        /* Do not need to add anything to the HTML code
+        body {
+        	font-family: 'Calibri';
+        	font-size: 12px;
+        	color: gray;
+        }
+
+        /* Example of Class Selector */
+        /* HTML Code: &lt;div class="insideDiv"> CONTENT &lt;/div>
+        .insideDiv {
+        	margin: 30px;
+        	padding: 15px;
+        	background-color: blue;
+        	color: white;
+        }
+
+        /* Example of ID Selector */
+        /* HTML Code: &lt;h1 id="pageTitle"> Title &lt;/h1>
+        #pageTitle {
+        	font-size: 50px;
+        	font-weight: bold;
+        	text-align: center;
+        	text-decoration: underline;
+        }
+      </code></pre>
+      </div>
+      <br><br><br><br><br><br>
+    </div>
+
+
+    <div class=row>
+      <div class="col-sm-12 sectiontitle resourcediv">
+        <i style='font-size:50px;color:white;' class='fas'>&#xf0c6;</i><br><br>
+        <span class=subtitle>Resources</span><br><br>
+      </div>
+    </div>
+    <div class=row>
+      <div class="col-sm-4 resources">
+        <br><br>
+        <a href='https://www.grabient.com/'>Grabient for Gradients</a><br><br>
+        <a href='https://www.toptal.com/designers/subtlepatterns/'>Subtle Backgrounds</a><br><br>
+        <a href='https://www.favicon.cc/'>Favicon Generator</a><br><br>
+        <a href='https://www.w3schools.com/tags/ref_pxtoemconversion.asp'>Px to Em</a><br><br>
+        <a href='https://www.canva.com/colors/color-palette-generator/'>Color Palette from Pic</a><br><br>
+        <a href='https://www.w3schools.com/cssref/default.asp'>CSS Reference</a><br><br>
+        <a href='https://www.pexels.com/'>Pexel Photos</a><br><br>
+        <a href='https://www.purple-planet.com/'>Purple Planet Music</a><br><br>
+        <a href='https://www.siteinspire.com/'>Site Inspo</a><br><br>
+
+
+      </div>
+      <div class="col-sm-4 resources">
+        <br><br>
+        <a href='https://getbootstrap.com/'>Bootstrap</a><br><br>
+        <a href='https://online-voice-recorder.com/'>Record Audio for Free</a><br><br>
+        <a href='https://fonts.google.com/'>Google Fonts</a><br><br>
+        <a href='https://contrast-ratio.com/#black-on-white'>Contrast Calculator</a><br><br>
+        <a href='http://cssgridgarden.com/'>Grid Garden Game</a><br><br>
+        <a href='https://www.w3schools.com/tags/'>HTML Reference</a><br><br>
+        <a href='https://unsplash.com/'>Unsplash Photos</a><br><br>
+        <a href='https://www.smashingmagazine.com/'>Smashing Magazine</a><br><br>
+        <a href='https://dribbble.com/'>Graphic Design Inspo</a><br><br>
+
+
+      </div>
+      <div class="col-sm-4 resources">
+        <br><br>
+        <a href='https://www.w3schools.com/'>W3Schools</a><br><br>
+        <a href='https://www.canva.com/'>Canva Free Design Tool</a><br><br>
+        <a href='https://www.w3schools.com/icons/fontawesome5_intro.asp'>Font Awesome Icons</a><br><br>
+        <a href='https://www.webfx.com/web-design/hex-to-rgb/'>RGB to HEX Colors</a><br><br>
+        <a href='https://developer.apple.com/design/human-interface-guidelines/'>Human Interaction Guidelines</a><br><br>
+        <a href='https://www.w3schools.com/js/'>JavaScript Reference</a><br><br>
+        <a href='https://www.bensound.com/royalty-free-music/electronica'>BenSound Music</a><br><br>
+        <a href='https://coolors.co/'>Fast Color Scheme Generator</a><br><br>
+        <a href='http://typegoodness.com/'>Typography Inspo</a><br><br>
+      </div>
+    </div>
+
+    <div class=row>
+      <div class="col-sm-12 resourcediv" id=socialdiv>
+        <a href='https://www.ucodegirl.org/'>
+            <i style='font-size:24px;color: white;' class='fas'>&#xf108;</i>
+        </a>
+        <a href='https://twitter.com/ucodegirl?lang=en'>
+          <i style='font-size:24px;color: white;' class='fab'>&#xf099;</i>
+        </a>
+        <a href='mailto:info@ucodegirl.org'>
+          <i style='font-size:24px;color: white;' class='far'>&#xf0e0;</i>
+        </a>
+        <a href='https://www.facebook.com/uCodeGirl/'>
+          <i style='font-size:24px;color: white;' class='fab'>&#xf082;</i>
+        </a>
+        <a href='https://www.instagram.com/ucodegirl/'>
+          <i style='font-size:24px;color: white;' class='fab'>&#xf16d;</i>
+        </a>
+        <a href='https://www.linkedin.com/company/ucodegirl/'>
+          <i style='font-size:24px;color: white;' class='fab'>&#xf08c;</i>
+        </a>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- rawpixel.com -->
